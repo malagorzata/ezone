@@ -7,17 +7,7 @@
 @use "sass/components/form-field";
 @use "sass/components/levels-status";
 @use "sass/components/navigation";
-
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-
-$background-color: lightpink;
+@use "sass/components/form";
 
 body {
   background-color: root.$grey-color;

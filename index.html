@@ -8,290 +8,299 @@
     <title>Vite App</title>
   </head>
   <body>
-    <form>
-      <section id="level0">
-        <p>Hi! We'd like to hear some information about you.</p>
-        <div class="grouping">
-          <label for="name"> Name <span class="hint">Enter your name</span> </label>
-          <input type="text" id="name" name="name" required />
+    <div id="container">
+      <form>
+        <div id="step-row">
+          <div id="progress"></div>
+          <div class="step-col"><small>Step 1</small></div>
+          <div class="step-col"><small>Step 2</small></div>
+          <div class="step-col"><small>Step 3</small></div>
+          <div class="step-col"><small>Step 4</small></div>
+          <div class="step-col"><small>Step 5</small></div>
         </div>
+        <section id="level0">
+          <p>Hi! We'd like to hear some information about you.</p>
+          <div class="grouping">
+            <label for="name"> Name <span class="hint">Enter your name</span> </label>
+            <input type="text" id="name" name="name" required />
+          </div>
 
-        <div class="grouping">
-          <label for="surname"
-            >Surname
-            <span class="hint">Enter your surname</span>
-          </label>
-          <input type="text" id="surname" name="surname" required />
-        </div>
+          <div class="grouping">
+            <label for="surname"
+              >Surname
+              <span class="hint">Enter your surname</span>
+            </label>
+            <input type="text" id="surname" name="surname" required />
+          </div>
 
-        <div class="grouping">
-          <label for="username"
-            >Username
-            <span class="hint">Enter your username</span>
-          </label>
-          <input type="text" id="username" name="username" required />
-        </div>
-      </section>
+          <div class="grouping">
+            <label for="username"
+              >Username
+              <span class="hint">Enter your username</span>
+            </label>
+            <input type="text" id="username" name="username" required />
+          </div>
+        </section>
 
-      <section id="level1">
-        <fieldset>
-          <label for="types"
-            >What types of games do you play?
-            <span class="hint">Choose your types</span>
-          </label>
-          <label for="types-fps">
-            FPS
-            <input type="checkbox" id="types-fps" name="types" />
-          </label>
-          <label for="types-mmorpg">
-            MMORPG
-            <input type="checkbox" id="types-mmorpg" name="types" />
-          </label>
-          <label for="types-sports">
-            Sports
-            <input type="checkbox" id="types-sports" name="types" />
-          </label>
-          <label for="types-racing">
-            Racing
-            <input type="checkbox" id="types-racing" name="types" />
-          </label>
-          <label for="types-tower">
-            Tower Defense
-            <input type="checkbox" id="types-tower" name="types" />
-          </label>
+        <section id="level1">
+          <fieldset>
+            <label for="types"
+              >What types of games do you play?
+              <span class="hint">Choose your types</span>
+            </label>
+            <label for="types-fps">
+              FPS
+              <input type="checkbox" id="types-fps" name="types" />
+            </label>
+            <label for="types-mmorpg">
+              MMORPG
+              <input type="checkbox" id="types-mmorpg" name="types" />
+            </label>
+            <label for="types-sports">
+              Sports
+              <input type="checkbox" id="types-sports" name="types" />
+            </label>
+            <label for="types-racing">
+              Racing
+              <input type="checkbox" id="types-racing" name="types" />
+            </label>
+            <label for="types-tower">
+              Tower Defense
+              <input type="checkbox" id="types-tower" name="types" />
+            </label>
 
-          <label for="types-rts">
-            RTS
-            <input type="checkbox" id="types-rts" name="types" />
-          </label>
-          <label for="types-simulation"> Simulation <input type="checkbox" id="types-simulation" name="types" /> </label>
-          <label for="types-role"> Role-playing <input type="checkbox" id="types-role" name="types" /> </label>
-          <label for="types-adventure"> Adventure <input type="checkbox" id="types-adventure" name="types" /> </label>
+            <label for="types-rts">
+              RTS
+              <input type="checkbox" id="types-rts" name="types" />
+            </label>
+            <label for="types-simulation"> Simulation <input type="checkbox" id="types-simulation" name="types" /> </label>
+            <label for="types-role"> Role-playing <input type="checkbox" id="types-role" name="types" /> </label>
+            <label for="types-adventure"> Adventure <input type="checkbox" id="types-adventure" name="types" /> </label>
 
-          <label for="types-survival">
-            Survival
-            <input type="checkbox" id="types-survival" name="types" />
-          </label>
+            <label for="types-survival">
+              Survival
+              <input type="checkbox" id="types-survival" name="types" />
+            </label>
 
-          <label for="types-fighting">
-            Fighting
-            <input type="checkbox" id="types-fighting" name="types" />
-          </label>
+            <label for="types-fighting">
+              Fighting
+              <input type="checkbox" id="types-fighting" name="types" />
+            </label>
 
-          <label for="types-battle">
-            Battle royale
-            <input type="checkbox" id="types-battle" name="types" />
-          </label>
-          <label for="types-rhythm"> Rhythm <input type="checkbox" id="types-rhythm" name="types" /> </label>
-          <label for="types-platform"> Platform <input type="checkbox" id="types-platform" name="types" /> </label>
-        </fieldset>
-      </section>
+            <label for="types-battle">
+              Battle royale
+              <input type="checkbox" id="types-battle" name="types" />
+            </label>
+            <label for="types-rhythm"> Rhythm <input type="checkbox" id="types-rhythm" name="types" /> </label>
+            <label for="types-platform"> Platform <input type="checkbox" id="types-platform" name="types" /> </label>
+          </fieldset>
+        </section>
 
-      <section id="level2">
-        <fieldset>
-          <label for="games"
-            >What games do you play?
-            <span class="hint">Choose your favourite games</span>
-          </label>
-          <label for="games-CS">
-            CS:GO
-            <input type="checkbox" id="games-CS" name="game" />
-          </label>
-          <label for="games-tekken">
-            Tekken
-            <input type="checkbox" id="games-tekken" name="game" />
-          </label>
-          <label for="games-fifa">
-            FIFA
-            <input type="checkbox" id="games-fifa" name="games" />
-          </label>
-          <label for="games-supermario">
-            Super Mario
-            <input type="checkbox" id="games-supermario" name="games" />
-          </label>
-          <label for="games-fortnite">
-            Fortnite
-            <input type="checkbox" id="games-fortnite" name="games" />
-          </label>
+        <section id="level2">
+          <fieldset>
+            <label for="games"
+              >What games do you play?
+              <span class="hint">Choose your favourite games</span>
+            </label>
+            <label for="games-CS">
+              CS:GO
+              <input type="checkbox" id="games-CS" name="game" />
+            </label>
+            <label for="games-tekken">
+              Tekken
+              <input type="checkbox" id="games-tekken" name="game" />
+            </label>
+            <label for="games-fifa">
+              FIFA
+              <input type="checkbox" id="games-fifa" name="games" />
+            </label>
+            <label for="games-supermario">
+              Super Mario
+              <input type="checkbox" id="games-supermario" name="games" />
+            </label>
+            <label for="games-fortnite">
+              Fortnite
+              <input type="checkbox" id="games-fortnite" name="games" />
+            </label>
 
-          <label for="games-callofduty">
-            Call of Duty
-            <input type="checkbox" id="games-callofduty" name="games" />
-          </label>
-          <label for="games-thesims">
-            The Sims
-            <input type="checkbox" id="games-thesims" name="games" />
-          </label>
+            <label for="games-callofduty">
+              Call of Duty
+              <input type="checkbox" id="games-callofduty" name="games" />
+            </label>
+            <label for="games-thesims">
+              The Sims
+              <input type="checkbox" id="games-thesims" name="games" />
+            </label>
 
-          <label for="games-mortalcombat">
-            Mortal Combat
-            <input type="checkbox" id="games-mortalcombat" name="games" />
-          </label>
+            <label for="games-mortalcombat">
+              Mortal Combat
+              <input type="checkbox" id="games-mortalcombat" name="games" />
+            </label>
 
-          <label for="games-guitarHero">
-            Guitar Hero
-            <input type="checkbox" id="games-guitarHero" name="games" />
-          </label>
+            <label for="games-guitarHero">
+              Guitar Hero
+              <input type="checkbox" id="games-guitarHero" name="games" />
+            </label>
 
-          <label for="games-worldofwarcraft">
-            World of Warcraft
-            <input type="checkbox" id="games-worldofwarcraft" name="games" />
-          </label>
+            <label for="games-worldofwarcraft">
+              World of Warcraft
+              <input type="checkbox" id="games-worldofwarcraft" name="games" />
+            </label>
 
-          <label for="games-skyrim">
-            Skyrim
-            <input type="checkbox" id="games-skyrim" name="games" />
-          </label>
+            <label for="games-skyrim">
+              Skyrim
+              <input type="checkbox" id="games-skyrim" name="games" />
+            </label>
 
-          <label for="games-starcraft">
-            Starcraft
-            <input type="checkbox" id="games-starcraft" name="games" />
-          </label>
+            <label for="games-starcraft">
+              Starcraft
+              <input type="checkbox" id="games-starcraft" name="games" />
+            </label>
 
-          <label for="games-warcraft">
-            Warcraft
-            <input type="checkbox" id="games-warcraft" name="games" />
-          </label>
+            <label for="games-warcraft">
+              Warcraft
+              <input type="checkbox" id="games-warcraft" name="games" />
+            </label>
 
-          <label for="games-lol">
-            League of Legends
-            <input type="checkbox" id="games-lol" name="games" />
-          </label>
+            <label for="games-lol">
+              League of Legends
+              <input type="checkbox" id="games-lol" name="games" />
+            </label>
 
-          <label for="games-dota">
-            Dota
-            <input type="checkbox" id="games-dota" name="games" />
-          </label>
+            <label for="games-dota">
+              Dota
+              <input type="checkbox" id="games-dota" name="games" />
+            </label>
 
-          <label for="games-valorant">
-            Valorant
-            <input type="checkbox" id="games-valorant" name="games" />
-          </label>
-          <label for="games-leftfordead">
-            Left for dead
-            <input type="checkbox" id="games-leftfordead" name="games" />
-          </label>
-          <label for="games-overwatch">
-            Overwatch
-            <input type="checkbox" id="games-overwatch" name="games" />
-          </label>
-          <label for="games-pubg">
-            PUBG
-            <input type="checkbox" id="games-pubg" name="games" />
-          </label>
+            <label for="games-valorant">
+              Valorant
+              <input type="checkbox" id="games-valorant" name="games" />
+            </label>
+            <label for="games-leftfordead">
+              Left for dead
+              <input type="checkbox" id="games-leftfordead" name="games" />
+            </label>
+            <label for="games-overwatch">
+              Overwatch
+              <input type="checkbox" id="games-overwatch" name="games" />
+            </label>
+            <label for="games-pubg">
+              PUBG
+              <input type="checkbox" id="games-pubg" name="games" />
+            </label>
 
-          <label for="games-diablo">
-            Diablo
-            <input type="checkbox" id="games-diablo" name="games" />
-          </label>
+            <label for="games-diablo">
+              Diablo
+              <input type="checkbox" id="games-diablo" name="games" />
+            </label>
 
-          <label for="games-minecraft">
-            Minecraft
-            <input type="checkbox" id="games-minecraft" name="games" />
-          </label>
-        </fieldset>
-      </section>
+            <label for="games-minecraft">
+              Minecraft
+              <input type="checkbox" id="games-minecraft" name="games" />
+            </label>
+          </fieldset>
+        </section>
 
-      <section id="level3">
-        <fieldset>
-          <label for="areas"
-            >What areas are in your interest?
-            <span class="hint">Choose your favourite areas</span>
-          </label>
-          <label for="areas-hand">
-            Hand/eye coordination
-            <input type="checkbox" id="areas-hand" name="areas" />
-          </label>
-          <label for="areas-reaction">
-            Reaction time
-            <input type="checkbox" id="areas-reaction" name="areas" />
-          </label>
-          <label for="areas-hearing">
-            Hearing
-            <input type="checkbox" id="areas-hearing" name="areas" />
-          </label>
-          <label for="areas-vision">
-            Vision
-            <input type="checkbox" id="areas-vision" name="areas" />
-          </label>
-          <label for="areas-communication">
-            Communication
-            <input type="checkbox" id="areas-communication" name="areas" />
-          </label>
-          <label for="areas-multi">
-            Multi-tasking
-            <input type="checkbox" id="areas-multi" name="areas" />
-          </label>
-          <label for="areas-mindset">
-            Mindset
-            <input type="checkbox" id="areas-mindset" name="areas" />
-          </label>
-          <label for="areas-nutrition">
-            Nutrition
-            <input type="checkbox" id="areas-nutrition" name="areas" />
-          </label>
-          <label for="areas-injuries">
-            Injuries
-            <input type="checkbox" id="areas-injuries" name="areas" />
-          </label>
-          <label for="areas-technology">
-            Technology
-            <input type="checkbox" id="areas-technology" name="areas" />
-          </label>
-          <label for="areas-physiology">
-            Physiology
-            <input type="checkbox" id="areas-physiology" name="areas" />
-          </label>
-          <label for="areas-sleep">
-            Sleep
-            <input type="checkbox" id="areas-sleep" name="areas" />
-          </label>
-          <label for="areas-stress">
-            Stress
-            <input type="checkbox" id="areas-stress" name="areas" />
-          </label>
-          <label for="areas-tactical">
-            Tactical
-            <input type="checkbox" id="areas-tactical" name="areas" />
-          </label>
-          <label for="areas-strategy">
-            Strategy
-            <input type="checkbox" id="areas-strategy" name="areas" />
-          </label>
-          <label for="areas-leadership">
-            Leadership
-            <input type="checkbox" id="areas-leadership" name="areas" />
-          </label>
-        </fieldset>
-      </section>
+        <section id="level3">
+          <fieldset>
+            <label for="areas"
+              >What areas are in your interest?
+              <span class="hint">Choose your favourite areas</span>
+            </label>
+            <label for="areas-hand">
+              Hand/eye coordination
+              <input type="checkbox" id="areas-hand" name="areas" />
+            </label>
+            <label for="areas-reaction">
+              Reaction time
+              <input type="checkbox" id="areas-reaction" name="areas" />
+            </label>
+            <label for="areas-hearing">
+              Hearing
+              <input type="checkbox" id="areas-hearing" name="areas" />
+            </label>
+            <label for="areas-vision">
+              Vision
+              <input type="checkbox" id="areas-vision" name="areas" />
+            </label>
+            <label for="areas-communication">
+              Communication
+              <input type="checkbox" id="areas-communication" name="areas" />
+            </label>
+            <label for="areas-multi">
+              Multi-tasking
+              <input type="checkbox" id="areas-multi" name="areas" />
+            </label>
+            <label for="areas-mindset">
+              Mindset
+              <input type="checkbox" id="areas-mindset" name="areas" />
+            </label>
+            <label for="areas-nutrition">
+              Nutrition
+              <input type="checkbox" id="areas-nutrition" name="areas" />
+            </label>
+            <label for="areas-injuries">
+              Injuries
+              <input type="checkbox" id="areas-injuries" name="areas" />
+            </label>
+            <label for="areas-technology">
+              Technology
+              <input type="checkbox" id="areas-technology" name="areas" />
+            </label>
+            <label for="areas-physiology">
+              Physiology
+              <input type="checkbox" id="areas-physiology" name="areas" />
+            </label>
+            <label for="areas-sleep">
+              Sleep
+              <input type="checkbox" id="areas-sleep" name="areas" />
+            </label>
+            <label for="areas-stress">
+              Stress
+              <input type="checkbox" id="areas-stress" name="areas" />
+            </label>
+            <label for="areas-tactical">
+              Tactical
+              <input type="checkbox" id="areas-tactical" name="areas" />
+            </label>
+            <label for="areas-strategy">
+              Strategy
+              <input type="checkbox" id="areas-strategy" name="areas" />
+            </label>
+            <label for="areas-leadership">
+              Leadership
+              <input type="checkbox" id="areas-leadership" name="areas" />
+            </label>
+          </fieldset>
+        </section>
 
-      <section id="level4">
-        <p>Last step is creating an account</p>
-        <div class="grouping">
-          <label for="email"> E-mail <span class="hint">Provide your e-mail</span> </label>
-          <input type="email" id="email" name="email" required />
-        </div>
+        <section id="level4">
+          <p>Last step is creating an account</p>
+          <div class="grouping">
+            <label for="email"> E-mail <span class="hint">Provide your e-mail</span> </label>
+            <input type="email" id="email" name="email" required />
+          </div>
 
-        <div class="grouping">
-          <label for="password1"
-            >Password
-            <span class="hint">Enter your password</span>
-          </label>
-          <input type="password" id="password1" name="password1" required />
-        </div>
+          <div class="grouping">
+            <label for="password1"
+              >Password
+              <span class="hint">Enter your password</span>
+            </label>
+            <input type="password" id="password1" name="password1" required />
+          </div>
 
-        <div class="grouping">
-          <label for="password2"
-            >Repeat password
-            <span class="hint">Enter your password</span>
-          </label>
-          <input type="password" id="password2" name="password2" required />
-        </div>
-      </section>
-      <button data-add id="submit">SUBMIT</button>
-    </form>
+          <div class="grouping">
+            <label for="password2"
+              >Repeat password
+              <span class="hint">Enter your password</span>
+            </label>
+            <input type="password" id="password2" name="password2" required />
+          </div>
+        </section>
+        <button data-add id="submit">SUBMIT</button>
+      </form>
+    </div>
 
-    <div id="app"></div>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
