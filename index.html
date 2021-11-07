@@ -8,8 +8,100 @@
     <title>Vite App</title>
   </head>
   <body>
-    <h1>Hejka</h1>
-    <h1>SIEMANO</h1>
+    <form>
+      <section id="level0">
+        <p>Hi! We'd like to hear some information about you.</p>
+        <div class="grouping">
+          <label for="name"> Name <span class="hint">Enter your name</span> </label>
+          <input type="text" id="name" name="name" required />
+        </div>
+
+        <div class="grouping">
+          <label for="surname"
+            >Surname
+            <span class="hint">Enter your surname</span>
+          </label>
+          <input type="text" id="surname" name="surname" required />
+        </div>
+
+        <div class="grouping">
+          <label for="username"
+            >Username
+            <span class="hint">Enter your username</span>
+          </label>
+          <input type="text" id="username" name="username" required />
+        </div>
+      </section>
+
+      <section id="level1">
+        <fieldset>
+          <label for="types"
+            >What types of games do you play?
+            <span class="hint">Choose your types</span>
+          </label>
+          <label for="types-fps">
+            FPS
+            <input type="checkbox" id="types-fps" name="types" required />
+          </label>
+          <label for="types-mmorpg">
+            MMORPG
+            <input type="checkbox" id="types-mmorpg" name="types" required />
+          </label>
+          <label for="types-sports">
+            Sports
+            <input type="checkbox" id="types-sports" name="types" required />
+          </label>
+          <label for="types-racing">
+            Racing
+            <input type="checkbox" id="types-racing" name="types" required />
+          </label>
+          <label for="types-tower">
+            Tower Defense
+            <input type="checkbox" id="types-tower" name="types" required />
+          </label>
+
+          <label for="types-rts">
+            RTS
+            <input type="checkbox" id="types-rts" name="types" required />
+          </label>
+          <label for="types-simulation"> Simulation <input type="checkbox" id="types-simulation" name="types" required /> </label>
+          <label for="types-role"> Role-playing <input type="checkbox" id="types-role" name="types" required /> </label>
+          <label for="types-adventure"> Adventure <input type="checkbox" id="types-adventure" name="types" required /> </label>
+
+          <label for="types-survival">
+            Survival
+            <input type="checkbox" id="types-survival" name="types" required />
+          </label>
+
+          <label for="types-fighting">
+            Fighting
+            <input type="checkbox" id="types-fighting" name="types" required />
+          </label>
+
+          <label for="types-battle">
+            Battle royale
+            <input type="checkbox" id="types-battle" name="types" required />
+          </label>
+          <label for="types-rhythm"> Rhythm <input type="checkbox" id="types-rhythm" name="types" required /> </label>
+          <label for="types-platform"> Platform <input type="checkbox" id="types-platform" name="types" required /> </label>
+        </fieldset>
+      </section>
+
+      <!-- <div class="grouping">
+        <label for="color"
+          >Color
+          <span class="hint">Choose your colour</span>
+        </label>
+        <input list="colors" type="color" id="color" name="color" required />
+        <datalist id="colors">
+          <option value="#72f1b8"></option>
+          <option value="#f97e72"></option>
+          <option value="#ef8a37"></option>
+          <option value="#fb28a8"></option>
+          <option value="#5000ca"></option>
+        </datalist>
+      </div> -->
+    </form>
     <div id="app"></div>
     <script type="module" src="/main.js"></script>
   </body>
