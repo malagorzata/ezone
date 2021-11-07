@@ -1,3 +1,5 @@
+@use "sass/base/root";
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -10,5 +12,5 @@
 $background-color: lightpink;
 
 body {
-  background-color: $background-color;
+  background-color: root.$grey-color;
 }

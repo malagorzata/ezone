@@ -16,10 +16,6 @@ form.addEventListener("submit", (e) => {
     const data = {
       name: form.elements.name.value,
       surname: form.elements.surname.value,
-
-      // horns: horns,
-      // species: form.elements.species.value,
-      //   abilities: form.elements.abilities.value.split("\n"),
     };
     console.log(data);
     post(data);
