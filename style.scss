@@ -1,14 +1,9 @@
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-
-$background-color: lightpink;
-
-body {
-  background-color: $background-color;
-}
+@use "sass/base/_layout.scss";
+@use "sass/base/_reset.scss";
+@use "sass/base/root";
+@use "sass/base/typography";
+@use "sass/components/background_animation";
+@use "sass/components/buttons";
+@use "sass/components/form-field";
+@use "sass/components/levels-status";
+@use "sass/components/navigation";
