@@ -1,4 +1,5 @@
 import "./style.scss";
+import { endpoint, headers } from "./settings.js";
 
 document.querySelector("#app").innerHTML = `
   <h1>Hello Vite!</h1>
@@ -26,3 +27,12 @@ form.addEventListener("submit", (e) => {
     form.reportValidity();
   }
 });
+
+function post(data) {
+  const postData = JSON.stringify(data);
+  fetch(endpoint, {
+    method: "post",
+    body: postData,
+    headers: headers,
+  }).then((res) => res.json());
+}
