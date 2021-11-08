@@ -1,23 +1,28 @@
 @font-face {
-    font-family: "Shapiro-Regular";
-    src: url("../../fonts/sharpiro-regular.ttf");
+  font-family: "Shapiro-Regular";
+  src: url("../../fonts/sharpiro-regular.ttf");
 }
 
 @font-face {
-    font-family: "Shapiro-Bold";
-    src: url("../../fonts/sharpiro-bold.ttf");
+  font-family: "Shapiro-Bold";
+  src: url("../../fonts/sharpiro-bold.ttf");
 }
 
 @font-face {
-    font-family: "Uniform-Medium";
-    src: url("../../fonts/uniform-pro-con-medium.ttf");
+  font-family: "Uniform-Medium";
+  src: url("../../fonts/uniform-pro-con-medium.ttf");
 }
 
 @font-face {
-    font-family: "Uniform-Black";
-    src: url("../../fonts/uniform-pro-con-black.ttf");
+  font-family: "Uniform-Black";
+  src: url("../../fonts/uniform-pro-con-black.ttf");
 }
 
 .step-col {
-    font-family: "Shapiro-Bold";
+  font-family: "Shapiro-Bold";
 }
+
+$font-regular: "Shapiro-Regular";
+$font-bold: "Shapiro-Bold";
+$font-medium: "Uniform-Medium";
+$font-black: "Uniform-Black";
