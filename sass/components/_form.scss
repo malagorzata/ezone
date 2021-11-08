@@ -63,8 +63,9 @@ form {
   margin: 3rem;
   position: absolute;
   transition: 0.5s;
-  div {
+  div.checkboxes {
     display: flex;
+    flex-direction: row;
     width: 42rem;
     flex-wrap: wrap;
   }

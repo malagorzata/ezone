@@ -1,8 +1,9 @@
 @use "../base/root";
-#level1 {
+#level1,
+#level2,
+#level3 {
   button {
     border-radius: 1rem;
-    margin-top: 10rem;
     padding: 0.2rem 2rem;
     margin-right: 1rem;
   }
@@ -20,8 +21,14 @@
     background-color: root.$blue-color;
     color: root.$grey-color3;
     border-radius: 1rem;
-    margin-top: 10rem;
     padding: 0.2rem 2rem;
     margin-right: 1rem;
   }
+}
+
+.flex-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 20rem;
 }
