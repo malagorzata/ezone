@@ -9,6 +9,6 @@
 @use "sass/components/navigation";
 @use "sass/components/form";
 
-body {
-  background-color: root.$grey-color;
-}
+// Home page
+@use "sass/components/marketing-section";
+@use "sass/base/layout-home";
