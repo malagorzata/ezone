@@ -94,11 +94,13 @@ form {
     color: rebeccapurple;
     display: none;
   }
-  input[type="checkbox"]:checked + label {
+  input[type="checkbox"]:checked + label,
+  input[type="checkbox"]:hover + label {
     background-color: root.$orange-color2;
     border: 1px solid root.$orange-color;
     box-shadow: 0px 0px 1px 1px #f48d69;
   }
+
   button {
     border-radius: 1rem;
     margin-top: 10rem;

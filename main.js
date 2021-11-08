@@ -50,12 +50,33 @@ form.addEventListener("submit", (e) => {
   console.log("przycisk dziala");
   e.preventDefault();
   if (form.checkValidity()) {
+    const types = document.querySelectorAll(`input[name="types"]:checked`);
+    const games = document.querySelectorAll(`input[name="games"]:checked`);
+    const areas = document.querySelectorAll(`input[name="areas"]:checked`);
+
+    const newTypes = [...types].map((el) => {
+      return el.value;
+    });
+
+    const newGames = [...games].map((el) => {
+      return el.value;
+    });
+
+    const newAreas = [...areas].map((el) => {
+      return el.value;
+    });
+
     const data = {
       name: form.elements.name.value,
       surname: form.elements.surname.value,
       username: form.elements.username.value,
       email: form.elements.email.value,
+      type: newTypes,
+      games: newGames,
+      areas: newAreas,
     };
+
+    console.log(newGames);
     console.log(data);
     post(data);
   } else {
