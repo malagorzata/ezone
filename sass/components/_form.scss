@@ -1,13 +1,13 @@
 @use "../base/root";
 
 #container {
-  background-color: root.$grey-color3;
-  border-radius: 20px;
+  background-color: white;
+  border-radius: 30px;
   border: 10px solid root.$grey-color;
-  width: 60vw;
+  width: 48rem;
   height: 35rem;
   margin: 100px auto;
-  box-shadow: 0px 0px 4px 9px rgba(62, 20, 214, 1);
+  box-shadow: 0px 0px 2px 9px rgba(62, 20, 214, 1);
 }
 
 form {
@@ -15,7 +15,7 @@ form {
 }
 
 .hidden {
-  display: none;
+  display: none !important ;
 }
 
 #step-row {
@@ -25,8 +25,10 @@ form {
   display: flex;
   align-items: center;
   position: relative;
-  background: white;
-  border-radius: 12px 12px 0 0;
+  // background-color: root.$grey-color3;
+  border-bottom: solid 2px root.$blue-color2;
+
+  border-radius: 20px 20px 0 0;
 }
 
 .step-col {
@@ -41,5 +43,60 @@ form {
   height: 100%;
   width: 33%;
   background: root.$blue-color2;
-  border-radius: 12px 0 0 0;
+  border-radius: 20px 0 0 0;
+  // border-bottom: solid 2px root.$blue-color;
+}
+
+#level1,
+#level2 {
+  margin: 3rem;
+  div {
+    display: flex;
+    width: 42rem;
+    flex-wrap: wrap;
+  }
+
+  label {
+    font-size: 1rem;
+    border: solid 1px black;
+    border-radius: 0.7rem;
+    padding: 0.3rem 0.6rem;
+    margin: 0.8rem 1rem 0 0;
+  }
+  label:hover {
+    cursor: pointer;
+  }
+  span {
+    font-size: 1.2rem;
+    display: block;
+  }
+
+  label:nth-child(1) {
+    font-size: 2rem;
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+  input[type="checkbox"] {
+    color: rebeccapurple;
+    display: none;
+  }
+  input[type="checkbox"]:checked + label {
+    background-color: root.$orange-color2;
+    border: 1px solid root.$orange-color;
+    box-shadow: 0px 0px 1px 1px #f48d69;
+  }
+  button {
+    border-radius: 1rem;
+    margin-top: 10rem;
+    padding: 0.2rem 2rem;
+    margin-right: 1rem;
+  }
+  button:hover {
+    cursor: pointer;
+  }
+  button:nth-child(2) {
+    background-color: root.$blue-color;
+    color: root.$grey-color3;
+  }
 }

@@ -16,7 +16,7 @@
           <div class="step-col">Step 2</div>
           <div class="step-col">Step 3</div>
         </div>
-        <section id="level0">
+        <section id="level0" class="hidden">
           <p>Hi! We'd like to hear some information about you.</p>
           <div class="grouping">
             <label for="name"> Name <span class="hint">Enter your name</span> </label>
@@ -38,22 +38,39 @@
             </label>
             <input type="text" id="username" name="username" required />
           </div>
+          <div class="grouping">
+            <label for="email"> E-mail <span class="hint">Provide your e-mail</span> </label>
+            <input type="email" id="email" name="email" required />
+          </div>
+
+          <div class="grouping">
+            <label for="password1"
+              >Password
+              <span class="hint">Enter your password</span>
+            </label>
+            <input type="password" id="password1" name="password1" required />
+          </div>
+
+          <div class="grouping">
+            <label for="password2"
+              >Repeat password
+              <span class="hint">Enter your password</span>
+            </label>
+            <input type="password" id="password2" name="password2" required />
+          </div>
         </section>
 
         <section id="level1">
-          <fieldset>
-            <label for="types"
-              >What types of games do you play?
-              <span class="hint">Choose your types</span>
-            </label>
-            <label for="types-fps">
-              FPS
-              <input type="checkbox" id="types-fps" name="types" />
-            </label>
-            <label for="types-mmorpg">
-              MMORPG
-              <input type="checkbox" id="types-mmorpg" name="types" />
-            </label>
+          <label for="types">What types of games do you play? </label>
+          <span class="hint">Choose your types</span>
+
+          <div>
+            <input type="checkbox" id="types-fps" name="types" />
+            <label for="types-fps"> FPS </label>
+
+            <input type="checkbox" id="types-mmorpg" name="types" />
+            <label for="types-mmorpg"> MMORPG </label>
+
             <label for="types-sports">
               Sports
               <input type="checkbox" id="types-sports" name="types" />
@@ -91,19 +108,20 @@
             </label>
             <label for="types-rhythm"> Rhythm <input type="checkbox" id="types-rhythm" name="types" /> </label>
             <label for="types-platform"> Platform <input type="checkbox" id="types-platform" name="types" /> </label>
-          </fieldset>
+          </div>
+          <div class="steps-buttons">
+            <button>BACK</button>
+            <button>NEXT</button>
+          </div>
         </section>
 
-        <section id="level2">
-          <fieldset>
-            <label for="games"
-              >What games do you play?
-              <span class="hint">Choose your favourite games</span>
-            </label>
-            <label for="games-CS">
-              CS:GO
-              <input type="checkbox" id="games-CS" name="game" />
-            </label>
+        <section id="level2" class="hidden">
+          <label for="games">What games do you play? </label>
+          <span class="hint">Choose your favourite games</span>
+          <div>
+            <input type="checkbox" id="games-CS" name="game" />
+            <label for="games-CS"> CS:GO </label>
+
             <label for="games-tekken">
               Tekken
               <input type="checkbox" id="games-tekken" name="game" />
@@ -196,10 +214,14 @@
               Minecraft
               <input type="checkbox" id="games-minecraft" name="games" />
             </label>
-          </fieldset>
+          </div>
+          <div class="steps-buttons">
+            <button>BACK</button>
+            <button>NEXT</button>
+          </div>
         </section>
 
-        <section id="level3">
+        <section id="level3" class="hidden">
           <fieldset>
             <label for="areas"
               >What areas are in your interest?
@@ -270,32 +292,8 @@
               <input type="checkbox" id="areas-leadership" name="areas" />
             </label>
           </fieldset>
+          <button data-add id="submit">SUBMIT</button>
         </section>
-
-        <section id="level4">
-          <p>Last step is creating an account</p>
-          <div class="grouping">
-            <label for="email"> E-mail <span class="hint">Provide your e-mail</span> </label>
-            <input type="email" id="email" name="email" required />
-          </div>
-
-          <div class="grouping">
-            <label for="password1"
-              >Password
-              <span class="hint">Enter your password</span>
-            </label>
-            <input type="password" id="password1" name="password1" required />
-          </div>
-
-          <div class="grouping">
-            <label for="password2"
-              >Repeat password
-              <span class="hint">Enter your password</span>
-            </label>
-            <input type="password" id="password2" name="password2" required />
-          </div>
-        </section>
-        <button data-add id="submit">SUBMIT</button>
       </form>
     </div>
 
