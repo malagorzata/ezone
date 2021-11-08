@@ -11,7 +11,6 @@
     <div id="container">
       <form>
         <div id="step-row">
-          <div id="progress"></div>
           <div class="step-col">Step 1</div>
           <div class="step-col">Step 2</div>
           <div class="step-col">Step 3</div>
@@ -110,8 +109,8 @@
             <label for="types-platform"> Platform <input type="checkbox" id="types-platform" name="types" /> </label>
           </div>
           <div class="steps-buttons">
-            <button>BACK</button>
-            <button>NEXT</button>
+            <button id="back1">BACK</button>
+            <button id="next1">NEXT</button>
           </div>
         </section>
 
@@ -216,13 +215,13 @@
             </label>
           </div>
           <div class="steps-buttons">
-            <button>BACK</button>
-            <button>NEXT</button>
+            <button id="back2">BACK</button>
+            <button id="next2">NEXT</button>
           </div>
         </section>
 
         <section id="level3" class="hidden">
-          <fieldset>
+          <div>
             <label for="areas"
               >What areas are in your interest?
               <span class="hint">Choose your favourite areas</span>
@@ -291,7 +290,9 @@
               Leadership
               <input type="checkbox" id="areas-leadership" name="areas" />
             </label>
-          </fieldset>
+          </div>
+          <button id="back3">BACK</button>
+
           <button data-add id="submit">SUBMIT</button>
         </section>
       </form>
