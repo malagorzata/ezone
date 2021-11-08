@@ -7,6 +7,7 @@
     grid-template-areas:
         "top"
         "marketing"
+        "title-articles"
         "articles"
         "footer";
 }
@@ -27,6 +28,10 @@
     height: 500px;
     // background-color: pink;
     background-color: #16152b;
+}
+
+#header-articles {
+    grid-area: title-articles;
 }
 
 #middle-image {
