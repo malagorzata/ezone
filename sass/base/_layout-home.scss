@@ -6,6 +6,7 @@
     display: grid;
     grid-template-areas:
         "top"
+        "marketing"
         "articles"
         "footer";
 }
@@ -19,6 +20,13 @@
 
 #top-image {
     grid-area: top;
+}
+
+#middle-marketing {
+    grid-area: marketing;
+    height: 500px;
+    // background-color: pink;
+    background-color: #16152b;
 }
 
 #middle-image {

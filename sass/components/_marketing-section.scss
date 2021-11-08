@@ -1,0 +1,48 @@
+#middle-marketing {
+    position: relative;
+}
+
+#home-gradient {
+    // position: relative;
+    position: absolute;
+    top: 0px;
+    z-index: 1;
+
+    height: 440px;
+    width: 100vw;
+    margin: 0;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    background: transparent
+        linear-gradient(
+            270deg,
+            #16152b 0%,
+            #16152b 13%,
+            #1e0d5d 27%,
+            #1e0d5d 73%,
+            #16152b 85%,
+            #16152b 100%
+        )
+        0% 0% no-repeat padding-box;
+}
+
+#marketing-container {
+    position: absolute;
+    // position: relative;
+    top: 0px;
+
+    background-color: blue;
+    height: 500px;
+    z-index: 1;
+    width: 100vw;
+    border: #3e14d6 5px solid;
+    border-radius: 50px;
+    background: #16152b 0% 0% no-repeat padding-box;
+
+    width: 60vw;
+    margin-left: 20vw;
+    margin-right: 20vw;
+
+    z-index: 2;
+}
