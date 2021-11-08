@@ -14,3 +14,14 @@
     color: root.$grey-color3;
   }
 }
+
+#level0 {
+  button {
+    background-color: root.$blue-color;
+    color: root.$grey-color3;
+    border-radius: 1rem;
+    margin-top: 10rem;
+    padding: 0.2rem 2rem;
+    margin-right: 1rem;
+  }
+}

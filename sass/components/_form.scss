@@ -3,7 +3,7 @@
 #container {
   background-color: white;
   border-radius: 30px;
-  border: 10px solid root.$grey-color;
+  border: 0.8rem solid root.$grey-color;
   width: 48rem;
   height: 35rem;
   margin: 100px auto;
@@ -112,4 +112,27 @@ form {
     background-color: root.$blue-color;
     color: root.$grey-color3;
   }
+}
+
+#level0 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2rem;
+  position: relative;
+  top: 0;
+  height: 33.5rem;
+}
+
+#img {
+  background-image: url(../../img/level0-background.png);
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  border-radius: 18px 0 0 18px;
+  background-size: 120%;
+  margin: -0.08rem;
+}
+
+#step-row {
+  display: none;
 }
