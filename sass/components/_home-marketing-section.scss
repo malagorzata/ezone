@@ -89,3 +89,16 @@
 
     z-index: 5;
 }
+
+// MORE INFO WRAPPER - icons etc
+
+#info-wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 5vw 2vw 8vw 2vw 10vw 2vw 8vw 2vw 5vw;
+    grid-template-rows: 10vw;
+    column-gap: 0;
+    row-gap: 0;
+}
