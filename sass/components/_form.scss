@@ -8,6 +8,7 @@
   height: 35rem;
   margin: 100px auto;
   box-shadow: 0px 0px 4px 9px rgba(62, 20, 214, 1);
+  position: relative;
 }
 
 form {
@@ -42,4 +43,11 @@ form {
   width: 33%;
   background: root.$blue-color2;
   border-radius: 12px 0 0 0;
+}
+
+#level0 {
+  width: 30rem;
+  position: absolute;
+  top: 10rem;
+  left: 10rem;
 }
