@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="./style.scss" />
     <title>Vite App</title>
   </head>
-  <body>
+  <body id="form-body">
+    <a href="./index.html"><button id="back-home">BACK HOME</button></a>
     <div id="container">
       <form>
         <div id="step-row">
@@ -22,27 +23,27 @@
             <div class="wrapper">
               <div class="grouping">
                 <label for="name"> Name </label>
-                <input type="text" id="name" name="name" placeholder=" " />
+                <input type="text" id="name" name="name" placeholder=" " required />
               </div>
 
               <div class="grouping">
                 <label for="surname">Surname </label>
-                <input type="text" id="surname" name="surname" placeholder=" " />
+                <input type="text" id="surname" name="surname" placeholder=" " required />
               </div>
 
               <div class="grouping">
                 <label for="username">Username </label>
-                <input type="text" id="username" name="username" placeholder=" " />
+                <input type="text" id="username" name="username" placeholder=" " required />
               </div>
               <div class="grouping">
                 <label for="email"> E-mail </label>
-                <input type="email" id="email" name="email" placeholder=" " />
+                <input type="email" id="email" name="email" placeholder=" " required />
                 <span id="icon"> IKONKA TU</span>
               </div>
 
               <div class="grouping">
                 <label for="password1">Password </label>
-                <input type="password" id="password1" name="password1" placeholder=" " />
+                <input type="password" id="password1" name="password1" placeholder=" " required />
               </div>
             </div>
             <div class="create-account">
