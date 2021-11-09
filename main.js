@@ -33,7 +33,7 @@ document.querySelector("#next2").addEventListener("click", function (event) {
   event.preventDefault();
   document.querySelector("#level2").classList.add("hidden");
   document.querySelector("#level3").classList.remove("hidden");
-  document.querySelector(".step-col:nth-child(2)").style.backgroundColor = "#cacefc";
+  document.querySelector(".step-col:nth-child(3)").style.backgroundColor = "#cacefc";
 });
 
 document.querySelector("#back3").addEventListener("click", function (event) {
