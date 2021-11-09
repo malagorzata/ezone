@@ -1,0 +1,40 @@
+@use "../base/root";
+@use "../base/typography";
+
+#level0 input {
+  border: 0;
+  border-bottom: 1px solid #707070;
+  outline: none;
+}
+.grouping label {
+  font-size: 0.7rem;
+}
+
+.create-account {
+  p {
+    font-family: typography.$font-regular;
+    font-size: 0.8rem;
+    margin: 0.5rem 0;
+  }
+}
+#icon {
+  display: none;
+}
+
+#level0 {
+  input:invalid:not(:placeholder-shown) {
+    border-bottom: solid 1px red;
+  }
+
+  input:focus-visible {
+    outline: none;
+    box-shadow: none;
+
+    border-bottom: solid 1px root.$blue-color;
+  }
+}
+
+//   input:valid:not(:placeholder-shown) {
+//     border-color: green;
+//     border-width: 2px;
+//   }

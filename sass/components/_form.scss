@@ -148,19 +148,3 @@ form {
   flex-direction: column;
   margin: 1rem 0;
 }
-
-#level0 input {
-  border: 0;
-  border-bottom: 1px solid #707070;
-}
-.grouping label {
-  font-size: 0.7rem;
-}
-
-.create-account {
-  p {
-    font-family: typography.$font-regular;
-    font-size: 0.8rem;
-    margin: 0.5rem 0;
-  }
-}
