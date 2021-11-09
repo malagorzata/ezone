@@ -1,17 +1,49 @@
 import "./style.scss";
 import { endpoint, headers } from "./settings.js";
 
-const cbs = document.querySelectorAll('input[name="types"]');
-cbs.forEach((cb) => cb.addEventListener("change", countChecked));
+const type = document.querySelectorAll('input[name="types"]');
+type.forEach((cb) => cb.addEventListener("change", countChecked));
 
 function countChecked() {
-  const valid = [...cbs].some((el) => el.checked);
+  const valid = [...type].some((el) => el.checked);
   if (valid) {
     document.getElementById("next1").disabled = false;
     document.getElementById("next1").style.backgroundColor = "#3e14d6";
+    document.getElementById("next2").disabled = true;
   } else {
     document.getElementById("next1").disabled = true;
     document.getElementById("next1").style.backgroundColor = "#3f3f50";
+  }
+}
+
+const game = document.querySelectorAll('input[name="games"]');
+game.forEach((gm) => gm.addEventListener("change", countCheckedGame));
+
+function countCheckedGame() {
+  const valid = [...game].some((el) => el.checked);
+  if (valid) {
+    document.getElementById("next2").disabled = false;
+    document.getElementById("next2").style.backgroundColor = "#3e14d6";
+    document.getElementById("submit").disabled = true;
+  } else {
+    document.getElementById("next2").disabled = true;
+    document.getElementById("next2").style.backgroundColor = "#3f3f50";
+  }
+
+  console.log(countCheckedGame);
+}
+
+const area = document.querySelectorAll('input[name="areas"]');
+area.forEach((ar) => ar.addEventListener("change", countCheckedArea));
+
+function countCheckedArea() {
+  const valid = [...area].some((el) => el.checked);
+  if (valid) {
+    document.getElementById("submit").disabled = false;
+    document.getElementById("submit").style.backgroundColor = "#3e14d6";
+  } else {
+    document.getElementById("submit").disabled = true;
+    document.getElementById("submit").style.backgroundColor = "#3f3f50";
   }
 }
 
