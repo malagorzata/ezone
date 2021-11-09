@@ -113,9 +113,9 @@ form {
   }
   input[type="checkbox"]:checked + label,
   input[type="checkbox"]:hover + label {
-    background-color: root.$orange-color2;
-    border: 1px solid root.$orange-color;
-    box-shadow: 0px 0px 1px 1px #f48d69;
+    background-color: root.$green-color2;
+    border: 1px solid root.$green-color;
+    box-shadow: 0px 0px 1px 1px root.$green-color2;
   }
 }
 

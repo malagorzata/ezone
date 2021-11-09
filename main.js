@@ -1,6 +1,20 @@
 import "./style.scss";
 import { endpoint, headers } from "./settings.js";
 
+const cbs = document.querySelectorAll('input[name="types"]');
+cbs.forEach((cb) => cb.addEventListener("change", countChecked));
+
+function countChecked() {
+  const valid = [...cbs].some((el) => el.checked);
+  if (valid) {
+    document.getElementById("next1").disabled = false;
+    document.getElementById("next1").style.backgroundColor = "#3e14d6";
+  } else {
+    document.getElementById("next1").disabled = true;
+    document.getElementById("next1").style.backgroundColor = "#3f3f50";
+  }
+}
+
 document.querySelector("#but-create").addEventListener("click", function (event) {
   if (form.checkValidity()) {
     event.preventDefault();
@@ -21,6 +35,7 @@ document.querySelector("#back1").addEventListener("click", function (event) {
 
 document.querySelector("#next1").addEventListener("click", function (event) {
   event.preventDefault();
+
   document.querySelector("#level1").classList.add("hidden");
   document.querySelector("#level2").classList.remove("hidden");
   document.querySelector(".step-col:nth-child(2)").style.backgroundColor = "#cacefc";
