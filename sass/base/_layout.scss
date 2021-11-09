@@ -1,1 +1,5 @@
-
+@use "../base/root";
+@use "../base/typography";
+#form-body {
+  background-color: root.$grey-color;
+}
