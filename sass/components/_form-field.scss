@@ -3,7 +3,7 @@
 
 #level0 input {
   border: 0;
-  border-bottom: 1px solid #707070;
+  border-bottom: 2px solid #707070;
   font-size: 1.2rem;
   font-family: typography.$font-medium;
   // margin: 0;
@@ -27,14 +27,14 @@
 
 #level0 {
   input:invalid:not(:placeholder-shown) {
-    border-bottom: solid 1px red;
+    border-bottom: solid 2px red;
   }
 
   input:focus-visible {
     outline: none;
     box-shadow: none;
 
-    border-bottom: solid 1px root.$blue-color;
+    border-bottom: solid 2px root.$blue-color;
   }
 }
 

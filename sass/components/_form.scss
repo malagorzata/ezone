@@ -146,9 +146,11 @@ form {
 }
 
 #level0 h2 {
-  font-family: typography.$font-regular;
-  font-size: 1.3rem;
+  font-family: typography.$font-bold;
+  font-size: 1.4rem;
   margin: 1.3rem 0;
+  font-weight: 200;
+  line-height: 2rem;
 }
 
 #wrapper {
