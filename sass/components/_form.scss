@@ -174,3 +174,63 @@ form {
     margin: 0.5rem 0;
   }
 }
+
+// submit screen
+
+#submit-page {
+  background-color: #16152b;
+  border-radius: 30px;
+  border: 0.8rem solid root.$grey-color;
+  width: 48rem;
+  height: 35rem;
+  margin: 100px auto;
+  box-shadow: 0px 0px 2px 9px rgba(62, 20, 214, 1);
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem;
+  h1 {
+    font-family: typography.$font-bold;
+    color: root.$orange-color1;
+    font-size: 2rem;
+    text-align: center;
+  }
+  h2 {
+    font-family: typography.$font-regular;
+    color: white;
+    font-size: 1.7rem;
+    text-align: center;
+    margin: 1rem;
+  }
+  h3 {
+    font-family: typography.$font-regular;
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 1rem;
+  }
+  .line {
+    height: 2px;
+    border: 1px solid root.$orange-color1;
+    width: 10rem;
+    margin: 0.5rem;
+  }
+
+  .skill {
+    display: flex;
+    flex-direction: row;
+    p {
+      font-family: typography.$font-medium;
+      color: white;
+      font-size: 1rem;
+    }
+  }
+
+  .submit-body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}

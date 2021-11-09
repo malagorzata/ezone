@@ -1,0 +1,284 @@
+@use "../base/root";
+@use "../base/typography";
+
+#home-body {
+    font-size: 100%;
+}
+
+#middle-marketing {
+    position: relative;
+}
+
+#home-gradient {
+    // position: relative;
+    position: absolute;
+    top: 0px;
+    z-index: 1;
+
+    height: 440px;
+    width: 100vw;
+    margin: 0;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    background: transparent
+        linear-gradient(
+            270deg,
+            #16152b 0%,
+            #16152b 13%,
+            #1e0d5d 27%,
+            #1e0d5d 73%,
+            #16152b 85%,
+            #16152b 100%
+        )
+        0% 0% no-repeat padding-box;
+}
+
+#marketing-container {
+    position: absolute;
+    // position: relative;
+    top: 0px;
+
+    background-color: blue;
+    height: 500px;
+    z-index: 1;
+    width: 100vw;
+    border: #3e14d6 5px solid;
+    border-radius: 50px;
+    background: #16152b 0% 0% no-repeat padding-box;
+
+    width: 60vw;
+    margin-left: 20vw;
+    margin-right: 20vw;
+
+    z-index: 2;
+}
+
+#header-marketing {
+    position: absolute;
+    width: 20vw;
+    margin-left: 40vw;
+    margin-right: 40vw;
+
+    z-index: 5;
+}
+
+#middle-marketing #header-marketing h1,
+#header-articles h1 {
+    color: white;
+    font-family: typography.$font-bold;
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+#middle-marketing #header-marketing h1 {
+    margin-top: 2rem;
+}
+
+#header-articles {
+    margin-top: 7rem;
+    justify-self: center;
+}
+
+.line-break {
+    border-bottom: root.$orange-color1 3px solid;
+    width: 100px;
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+
+    z-index: 5;
+}
+
+// MORE INFO WRAPPER - icons etc
+
+#info-wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 5.5vw 2vw 7vw 2.5vw 10vw 2.5vw 7vw 2vw 5.5vw;
+    grid-template-rows: 8vw 1vw 3vw;
+    column-gap: 0;
+    row-gap: 0;
+    margin-top: 140px;
+    // margin-top: 8rem;
+}
+
+#middle-circle {
+    width: 10vw;
+    height: 10vw;
+    border-radius: 500px;
+    background: transparent linear-gradient(180deg, #2902b8 0%, #1d0087 100%) 0%
+        0% no-repeat padding-box;
+    grid-column: 5 / span 1;
+    grid-row: 1 / 3;
+    align-self: center;
+
+    z-index: 4;
+}
+
+#icon-circle1,
+#icon-circle2,
+#icon-circle3,
+#icon-circle4 {
+    background: transparent linear-gradient(180deg, #f48d69 0%, #d6633c 100%) 0%
+        0% no-repeat padding-box;
+    border-radius: 500px;
+    align-self: center;
+    z-index: 4;
+}
+
+#icon-circle1 {
+    width: 5.5vw;
+    height: 5.5vw;
+
+    grid-column: 1 / span 1;
+    grid-row: 1 / 2;
+}
+
+#icon-circle2 {
+    width: 7vw;
+    height: 7vw;
+
+    grid-column: 3 / span 1;
+    grid-row: 1 / 2;
+}
+
+#icon-circle3 {
+    width: 7vw;
+    height: 7vw;
+
+    grid-column: 7 / span 1;
+    grid-row: 1 / 2;
+}
+
+#icon-circle4 {
+    width: 5.5vw;
+    height: 5.5vw;
+
+    grid-column: 9 / span 1;
+    grid-row: 1 / 2;
+}
+
+#line-behind {
+    height: 0.5rem;
+    grid-column: 1 / 10;
+    grid-row: 1 / 2;
+    align-self: center;
+
+    background: transparent
+        linear-gradient(
+            90deg,
+            #1f0a6b 0%,
+            #3e14d6 40%,
+            #3e14d6 60%,
+            #1f0a6b 100%
+        )
+        0% 0% no-repeat padding-box;
+
+    z-index: 3;
+}
+
+#bottom-gradient {
+    position: relative;
+    height: 90px;
+    width: 60vw;
+    margin-left: 20vw;
+    margin-right: 20vw;
+
+    background: transparent linear-gradient(180deg, #3e14d6 0%, #23068b 100%) 0%
+        0% no-repeat padding-box;
+    border-radius: 0px 0px 50px 50px;
+    margin-top: 67px;
+
+    z-index: 5;
+}
+
+// TEXT IN MARKETING SECTION
+
+h3.icon-titles {
+    grid-row: 3 / 4;
+    z-index: 3;
+
+    font-family: typography.$font-regular;
+    font-size: 1rem;
+    text-align: center;
+    color: white;
+}
+
+#title1 {
+    grid-column: 1 / 2;
+}
+
+#title2 {
+    grid-column: 3 / 4;
+}
+
+#title3 {
+    grid-column: 7 / 8;
+}
+
+#title4 {
+    grid-column: 9 / 10;
+}
+
+#middle-circle h2 {
+    position: relative;
+    top: 18%;
+    font-family: typography.$font-regular;
+    font-size: 2.5rem;
+    text-align: center;
+    color: white;
+
+    z-index: 4;
+}
+
+#middle-circle p {
+    position: relative;
+    top: 20%;
+    font-family: typography.$font-medium;
+    font-size: 1rem;
+    text-align: center;
+    color: white;
+
+    z-index: 4;
+}
+
+// ICONS
+
+#icon1 {
+    position: relative;
+    top: 20%;
+    left: 17%;
+    width: 3.5vw;
+    height: 3vw;
+    z-index: 4;
+}
+
+#icon2 {
+    position: relative;
+    top: 30%;
+    left: 15%;
+    width: 4.9vw;
+    height: 2.8vw;
+    z-index: 4;
+}
+
+#icon3 {
+    position: relative;
+    top: 17%;
+    left: 17%;
+    width: 4.7vw;
+    height: 4.7vw;
+    z-index: 4;
+}
+
+#icon4 {
+    position: relative;
+    top: 20%;
+    left: 18%;
+    width: 3.5vw;
+    height: 3.3vw;
+    z-index: 4;
+}
