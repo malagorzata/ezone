@@ -34,32 +34,57 @@ document.querySelector("#back1").addEventListener("click", function (event) {
 });
 
 document.querySelector("#next1").addEventListener("click", function (event) {
+  console.log("przycisk 1");
+
   event.preventDefault();
 
   document.querySelector("#level1").classList.add("hidden");
   document.querySelector("#level2").classList.remove("hidden");
-  document.querySelector(".step-col:nth-child(2)").style.backgroundColor = "#cacefc";
+  // document.querySelector(".step-col:nth-child(2)").style.backgroundColor = "#cacefc";
+  document.querySelector(".step-col:nth-child(2)").classList.add("progress-settings");
+  document.querySelector(".step-col:nth-child(2)").classList.add("fill");
 });
 
 document.querySelector("#back2").addEventListener("click", function (event) {
   event.preventDefault();
   document.querySelector("#level1").classList.remove("hidden");
   document.querySelector("#level2").classList.add("hidden");
-  document.querySelector(".step-col:nth-child(2)").style.backgroundColor = "white";
+  document.querySelector(".step-col:nth-child(2)").classList.remove("fill");
+  document.querySelector(".step-col:nth-child(2)").classList.remove("progress-settings");
+  document.querySelector(".step-col:nth-child(2)").classList.add("progress-settings2");
+  document.querySelector(".step-col:nth-child(2)").classList.add("unfill");
+  setTimeout(function () {
+    document.querySelector(".step-col:nth-child(2)").classList.remove("progress-settings2");
+    document.querySelector(".step-col:nth-child(2)").classList.remove("unfill");
+  }, 1000);
+
+  // document.querySelector(".step-col:nth-child(2)").style.backgroundColor = "white";
 });
 
 document.querySelector("#next2").addEventListener("click", function (event) {
   event.preventDefault();
   document.querySelector("#level2").classList.add("hidden");
   document.querySelector("#level3").classList.remove("hidden");
-  document.querySelector(".step-col:nth-child(3)").style.backgroundColor = "#cacefc";
+  document.querySelector(".step-col:nth-child(3)").classList.add("progress-settings");
+  document.querySelector(".step-col:nth-child(3)").classList.add("fill");
+  // document.querySelector(".step-col:nth-child(3)").style.backgroundColor = "#cacefc";
 });
 
 document.querySelector("#back3").addEventListener("click", function (event) {
   event.preventDefault();
   document.querySelector("#level2").classList.remove("hidden");
   document.querySelector("#level3").classList.add("hidden");
-  document.querySelector(".step-col:nth-child(3)").style.backgroundColor = "white";
+  document.querySelector(".step-col:nth-child(3)").classList.remove("progress-settings");
+  document.querySelector(".step-col:nth-child(3)").classList.remove("fill");
+
+  document.querySelector(".step-col:nth-child(3)").classList.add("progress-settings2");
+  document.querySelector(".step-col:nth-child(3)").classList.add("unfill");
+  setTimeout(function () {
+    document.querySelector(".step-col:nth-child(3)").classList.remove("progress-settings2");
+    document.querySelector(".step-col:nth-child(3)").classList.remove("unfill");
+  }, 1000);
+
+  // document.querySelector(".step-col:nth-child(3)").style.backgroundColor = "white";
 });
 
 document.querySelector("#submit").addEventListener("click", function () {

@@ -43,12 +43,13 @@ form {
 }
 .step-col:nth-child(1) {
   border-radius: 20px 0 0 0;
-  background-color: root.$blue-color2;
+  // background-color: root.$blue-color2;
 }
-
 .step-col:nth-child(3) {
   border-radius: 0 20px 0 0;
+  // background-color: root.$blue-color2;
 }
+
 #progress {
   position: absolute;
   height: 100%;
