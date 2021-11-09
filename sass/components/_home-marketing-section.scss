@@ -98,11 +98,11 @@
     justify-content: center;
     display: grid;
     grid-template-columns: 5.5vw 2vw 7vw 2.5vw 10vw 2.5vw 7vw 2vw 5.5vw;
-    grid-template-rows: 9vw 1vw 3vw;
+    grid-template-rows: 8vw 1vw 3vw;
     column-gap: 0;
     row-gap: 0;
-
-    margin-top: 8rem;
+    margin-top: 140px;
+    // margin-top: 8rem;
 }
 
 #middle-circle {
@@ -180,6 +180,21 @@
     z-index: 3;
 }
 
+#bottom-gradient {
+    position: relative;
+    height: 90px;
+    width: 60vw;
+    margin-left: 20vw;
+    margin-right: 20vw;
+
+    background: transparent linear-gradient(180deg, #3e14d6 0%, #23068b 100%) 0%
+        0% no-repeat padding-box;
+    border-radius: 0px 0px 50px 50px;
+    margin-top: 67px;
+
+    z-index: 5;
+}
+
 // TEXT IN MARKETING SECTION
 
 h3.icon-titles {
@@ -208,6 +223,28 @@ h3.icon-titles {
     grid-column: 9 / 10;
 }
 
+#middle-circle h2 {
+    position: relative;
+    top: 18%;
+    font-family: typography.$font-regular;
+    font-size: 2.5rem;
+    text-align: center;
+    color: white;
+
+    z-index: 4;
+}
+
+#middle-circle p {
+    position: relative;
+    top: 20%;
+    font-family: typography.$font-medium;
+    font-size: 1rem;
+    text-align: center;
+    color: white;
+
+    z-index: 4;
+}
+
 // ICONS
 
 #icon1 {
@@ -221,10 +258,10 @@ h3.icon-titles {
 
 #icon2 {
     position: relative;
-    top: 28%;
+    top: 30%;
     left: 15%;
     width: 4.9vw;
-    height: 3vw;
+    height: 2.8vw;
     z-index: 4;
 }
 
