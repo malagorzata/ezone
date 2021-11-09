@@ -81,20 +81,35 @@ form {
   label:hover {
     cursor: pointer;
   }
+
+  label[for="types"],
+  label[for="games"],
+  label[for="areas"] {
+    font-family: typography.$font-bold;
+  }
+
   span {
     font-size: 1.2rem;
     display: block;
+    margin: 0.3rem 0;
+    margin-bottom: 0.7rem;
   }
 
   label:nth-child(1) {
-    font-size: 2rem;
+    font-size: 1.5rem;
     border: none;
-    margin: 0;
+    margin: 0.1rem 0;
     padding: 0;
   }
   input[type="checkbox"] {
     color: rebeccapurple;
     display: none;
+  }
+
+  .checkboxes {
+    label {
+      font-family: typography.$font-medium;
+    }
   }
   input[type="checkbox"]:checked + label,
   input[type="checkbox"]:hover + label {
@@ -132,16 +147,16 @@ form {
 
 #level0 h2 {
   font-family: typography.$font-regular;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   margin: 1.3rem 0;
 }
 
 #wrapper {
-  margin: 1rem;
+  margin: 0.2rem;
   width: 20rem;
 }
 .wrapper {
-  width: 12rem;
+  width: 19rem;
 }
 .grouping {
   display: flex;
@@ -152,15 +167,20 @@ form {
 #level0 input {
   border: 0;
   border-bottom: 1px solid #707070;
+  font-size: 1.2rem;
+  font-family: typography.$font-medium;
+  // margin: 0;
+  // padding: 0;
 }
 .grouping label {
-  font-size: 0.7rem;
+  font-size: 0.8rem;
+  opacity: 0.8;
 }
 
 .create-account {
   p {
     font-family: typography.$font-regular;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     margin: 0.5rem 0;
   }
 }
