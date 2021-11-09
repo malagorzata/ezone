@@ -3,3 +3,25 @@
 #form-body {
   background-color: root.$grey-color;
 }
+#form-body {
+  a {
+    color: white;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    border: solid 2px white;
+    padding: 1rem 2rem;
+    border-radius: 1.8rem;
+    background-color: none;
+  }
+  a:hover {
+    cursor: pointer;
+  }
+  #back-home {
+    background-color: transparent;
+    border: 0;
+  }
+  #back-home:hover {
+    cursor: pointer;
+  }
+}
