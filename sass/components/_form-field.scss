@@ -26,7 +26,7 @@
 }
 
 #level0 {
-  input:invalid:not(:placeholder-shown) {
+  input:invalid:not(:placeholder-shown, :focus) {
     border-bottom: solid 2px red;
   }
 

@@ -2,10 +2,14 @@ import "./style.scss";
 import { endpoint, headers } from "./settings.js";
 
 document.querySelector("#but-create").addEventListener("click", function (event) {
-  event.preventDefault();
-  document.querySelector("#level0").classList.add("hidden");
-  document.querySelector("#level1").classList.remove("hidden");
-  document.querySelector("#step-row").style.display = "flex";
+  if (form.checkValidity()) {
+    event.preventDefault();
+    document.querySelector("#level0").classList.add("hidden");
+    document.querySelector("#level1").classList.remove("hidden");
+    document.querySelector("#step-row").style.display = "flex";
+  } else {
+    form.reportValidity();
+  }
 });
 
 document.querySelector("#back1").addEventListener("click", function (event) {
