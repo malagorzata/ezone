@@ -209,7 +209,7 @@ form {
     color: white;
     font-size: 1.5rem;
     text-align: center;
-    margin: 1rem;
+    margin: 0.5rem;
   }
   .line {
     height: 2px;
@@ -221,10 +221,19 @@ form {
   .skill {
     display: flex;
     flex-direction: row;
+    margin: 1rem 0;
     p {
       font-family: typography.$font-medium;
       color: white;
-      font-size: 1rem;
+      font-size: 1.3rem;
+      padding: 0.5rem;
+    }
+    img {
+      height: 3rem;
+      width: auto;
+      background-color: root.$orange-color;
+      padding: 0.5rem;
+      border-radius: 5rem;
     }
   }
 
@@ -232,5 +241,10 @@ form {
     display: flex;
     align-items: center;
     flex-direction: column;
+  }
+
+  .gain {
+    margin: 0;
+    padding: 0;
   }
 }
