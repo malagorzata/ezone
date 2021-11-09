@@ -4,10 +4,14 @@
 #level0 input {
   border: 0;
   border-bottom: 1px solid #707070;
-  outline: none;
+  font-size: 1.2rem;
+  font-family: typography.$font-medium;
+  // margin: 0;
+  // padding: 0;
 }
 .grouping label {
-  font-size: 0.7rem;
+  font-size: 0.8rem;
+  opacity: 0.8;
 }
 
 .create-account {
