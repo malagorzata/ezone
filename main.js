@@ -47,6 +47,11 @@ document.querySelector("#back3").addEventListener("click", function (event) {
   document.querySelector(".step-col:nth-child(3)").style.backgroundColor = "white";
 });
 
+document.querySelector("#submit").addEventListener("click", function () {
+  document.querySelector("#submit-page").classList.remove("hidden");
+  document.querySelector("#container").classList.add("hidden");
+});
+
 const form = document.querySelector("form");
 form.setAttribute("novalidate", true);
 
