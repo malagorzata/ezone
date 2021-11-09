@@ -178,7 +178,7 @@ form {
 // submit screen
 
 #submit-page {
-  background-color: #16152b;
+  background-image: url(../../public/images/final-screen-background.png);
   border-radius: 30px;
   border: 0.8rem solid root.$grey-color;
   width: 48rem;
@@ -194,20 +194,21 @@ form {
   h1 {
     font-family: typography.$font-bold;
     color: root.$orange-color1;
-    font-size: 2rem;
+    font-size: 2.2rem;
     text-align: center;
   }
   h2 {
     font-family: typography.$font-regular;
     color: white;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     text-align: center;
     margin: 1rem;
+    color: root.$green-color1;
   }
   h3 {
     font-family: typography.$font-regular;
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     text-align: center;
     margin: 0.5rem;
   }
