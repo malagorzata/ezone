@@ -1,0 +1,43 @@
+@use "./root";
+@use "./reset";
+
+#home-body {
+    background-color: #16152b;
+    display: grid;
+    grid-template-areas:
+        "top"
+        "marketing"
+        "title-articles"
+        "articles"
+        "footer";
+}
+
+#top-image img,
+#middle-image img,
+#bottom-image img {
+    width: 100vw;
+    height: auto;
+}
+
+#top-image {
+    grid-area: top;
+}
+
+#middle-marketing {
+    grid-area: marketing;
+    height: 500px;
+    // background-color: pink;
+    background-color: #16152b;
+}
+
+#header-articles {
+    grid-area: title-articles;
+}
+
+#middle-image {
+    grid-area: articles;
+}
+
+#bottom-image {
+    grid-area: footer;
+}
