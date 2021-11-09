@@ -1,276 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.scss" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="container">
-      <form>
-        <div id="step-row">
-          <div class="step-col progress-settings fill">Step 1</div>
-          <div class="step-col">Step 2</div>
-          <div class="step-col">Step 3</div>
-        </div>
-        <section id="level0">
-          <div id="img"></div>
-          <div id="wrapper">
-            <h2>Hi! We'd like to hear more information about you.</h2>
-            <div class="wrapper">
-              <div class="grouping">
-                <label for="name"> Name </label>
-                <input type="text" id="name" name="name" placeholder=" " />
-              </div>
-
-              <div class="grouping">
-                <label for="surname">Surname </label>
-                <input type="text" id="surname" name="surname" placeholder=" " />
-              </div>
-
-              <div class="grouping">
-                <label for="username">Username </label>
-                <input type="text" id="username" name="username" placeholder=" " />
-              </div>
-              <div class="grouping">
-                <label for="email"> E-mail </label>
-                <input type="email" id="email" name="email" placeholder=" " />
-                <span id="icon"> IKONKA TU</span>
-              </div>
-
-              <div class="grouping">
-                <label for="password1">Password </label>
-                <input type="password" id="password1" name="password1" placeholder=" " />
-              </div>
-            </div>
-            <div class="create-account">
-              <button id="but-create" class="nosubmit">CREATE ACCOUNT</button>
-              <p>...and personalise your experience.</p>
-            </div>
-          </div>
-        </section>
-
-        <section id="level1" class="hidden">
-          <label for="types">What types of games do you play? </label>
-          <span class="hint">Choose your types</span>
-          <div class="flex-wrap">
-            <div class="checkboxes">
-              <input type="checkbox" id="types-fps" name="types" value="FPS" />
-              <label for="types-fps"> FPS </label>
-
-              <input type="checkbox" id="types-mmorpg" name="types" value="MMORPG" />
-              <label for="types-mmorpg"> MMORPG </label>
-
-              <input type="checkbox" id="types-sports" name="types" value="Sports" />
-              <label for="types-sports"> Sports </label>
-
-              <input type="checkbox" id="types-racing" name="types" value="Racing" />
-              <label for="types-racing"> Racing </label>
-
-              <input type="checkbox" id="types-tower" name="types" value="Tower Defense" />
-              <label for="types-tower"> Tower Defense </label>
-
-              <input type="checkbox" id="types-rts" name="types" value="RTS" />
-              <label for="types-rts"> RTS </label>
-
-              <input type="checkbox" id="types-simulation" name="types" value="Simulation" />
-              <label for="types-simulation"> Simulation </label>
-
-              <input type="checkbox" id="types-role" name="types" value="Role-playing" />
-              <label for="types-role"> Role-playing </label>
-
-              <input type="checkbox" id="types-adventure" name="types" value="Adventure" />
-              <label for="types-adventure"> Adventure </label>
-
-              <input type="checkbox" id="types-survival" name="types" value="Survival" />
-              <label for="types-survival"> Survival </label>
-
-              <input type="checkbox" id="types-fighting" name="types" value="Fighting" />
-              <label for="types-fighting"> Fighting </label>
-
-              <input type="checkbox" id="types-battle" name="types" value="Battle royale" />
-              <label for="types-battle"> Battle royale </label>
-
-              <input type="checkbox" id="types-rhythm" name="types" value="Rhythm" />
-              <label for="types-rhythm"> Rhythm </label>
-
-              <input type="checkbox" id="types-platform" name="types" value="Platform" />
-              <label for="types-platform"> Platform </label>
-            </div>
-            <div class="steps-buttons">
-              <button id="back1" class="nosubmit">BACK</button>
-              <button id="next1" class="nosubmit" disabled>NEXT</button>
-            </div>
-          </div>
-        </section>
-
-        <section id="level2" class="hidden">
-          <label for="games">What games do you play? </label>
-          <span class="hint">Choose your favourite games</span>
-          <div class="flex-wrap">
-            <div class="checkboxes">
-              <input type="checkbox" id="games-CS" name="game" value="CS:GO" />
-              <label for="games-CS"> CS:GO </label>
-
-              <input type="checkbox" id="games-tekken" name="game" value="Tekken" />
-              <label for="games-tekken"> Tekken </label>
-
-              <input type="checkbox" id="games-fifa" name="games" value="FIFA" />
-              <label for="games-fifa"> FIFA </label>
-
-              <input type="checkbox" id="games-supermario" name="games" value="Super Mario" />
-              <label for="games-supermario"> Super Mario </label>
-
-              <input type="checkbox" id="games-fortnite" name="games" value="Fortnite" />
-              <label for="games-fortnite"> Fortnite </label>
-
-              <input type="checkbox" id="games-callofduty" name="games" value="Call of Duty" />
-
-              <label for="games-callofduty"> Call of Duty </label>
-
-              <input type="checkbox" id="games-thesims" name="games" value="The Sims" />
-              <label for="games-thesims"> The Sims </label>
-
-              <input type="checkbox" id="games-mortalcombat" name="games" value="Mortal Combat" />
-              <label for="games-mortalcombat"> Mortal Combat </label>
-
-              <input type="checkbox" id="games-guitarHero" name="games" value="Guitar Hero" />
-              <label for="games-guitarHero"> Guitar Hero </label>
-
-              <input type="checkbox" id="games-worldofwarcraft" name="games" value="World of Warcraft" />
-              <label for="games-worldofwarcraft"> World of Warcraft </label>
-
-              <input type="checkbox" id="games-skyrim" name="games" value="Skyrim" />
-              <label for="games-skyrim"> Skyrim </label>
-
-              <input type="checkbox" id="games-starcraft" name="games" value="Starcraft" />
-              <label for="games-starcraft"> Starcraft </label>
-
-              <input type="checkbox" id="games-warcraft" name="games" value="Warcraft" />
-              <label for="games-warcraft"> Warcraft </label>
-
-              <input type="checkbox" id="games-lol" name="games" value="League of Legends" />
-              <label for="games-lol"> League of Legends </label>
-
-              <input type="checkbox" id="games-dota" name="games" value="Dota" />
-              <label for="games-dota"> Dota </label>
-
-              <input type="checkbox" id="games-valorant" name="games" value="Valorant" />
-              <label for="games-valorant"> Valorant </label>
-
-              <input type="checkbox" id="games-leftfordead" name="games" value="Left for dead" />
-              <label for="games-leftfordead"> Left for dead </label>
-
-              <input type="checkbox" id="games-overwatch" name="games" value="Overwatch" />
-              <label for="games-overwatch"> Overwatch </label>
-
-              <input type="checkbox" id="games-pubg" name="games" value="PUBG" />
-              <label for="games-pubg"> PUBG </label>
-
-              <input type="checkbox" id="games-diablo" name="games" value="Diablo" />
-              <label for="games-diablo"> Diablo </label>
-
-              <input type="checkbox" id="games-minecraft" name="games" value="Minecraft" />
-              <label for="games-minecraft"> Minecraft </label>
-            </div>
-            <div class="steps-buttons">
-              <button id="back2" class="nosubmit">BACK</button>
-              <button id="next2" class="nosubmit">NEXT</button>
-            </div>
-          </div>
-        </section>
-
-        <section id="level3" class="hidden">
-          <label for="areas">What areas are in your interest? </label>
-          <span class="hint">Choose your favourite areas</span>
-          <div class="flex-wrap">
-            <div class="checkboxes">
-              <input type="checkbox" id="areas-hand" name="areas" value="Hand/eye coordination" />
-              <label for="areas-hand"> Hand/eye coordination </label>
-
-              <input type="checkbox" id="areas-reaction" name="areas" value="Reaction time" />
-              <label for="areas-reaction"> Reaction time </label>
-
-              <input type="checkbox" id="areas-hearing" name="areas" value="Hearing" />
-              <label for="areas-hearing"> Hearing </label>
-
-              <input type="checkbox" id="areas-vision" name="areas" value="Vision" />
-              <label for="areas-vision"> Vision </label>
-
-              <input type="checkbox" id="areas-communication" name="areas" value="Communication" />
-              <label for="areas-communication">Communication</label>
-
-              <input type="checkbox" id="areas-multi" name="areas" value="Multi-tasking" />
-              <label for="areas-multi"> Multi-tasking </label>
-
-              <input type="checkbox" id="areas-mindset" name="areas" value="Mindset" />
-              <label for="areas-mindset"> Mindset</label>
-
-              <input type="checkbox" id="areas-nutrition" name="areas" value="Nutrition" />
-              <label for="areas-nutrition">Nutrition</label>
-
-              <input type="checkbox" id="areas-injuries" name="areas" value="Injuries" />
-              <label for="areas-injuries">Injuries</label>
-
-              <input type="checkbox" id="areas-technology" name="areas" value="Technology" />
-              <label for="areas-technology"> Technology</label>
-
-              <input type="checkbox" id="areas-physiology" name="areas" value="Physiology" />
-              <label for="areas-physiology"> Physiology</label>
-
-              <input type="checkbox" id="areas-sleep" name="areas" value="Sleep" />
-              <label for="areas-sleep"> Sleep </label>
-
-              <input type="checkbox" id="areas-stress" name="areas" value="Stress" />
-              <label for="areas-stress">Stress</label>
-
-              <input type="checkbox" id="areas-tactical" name="areas" value="Tactical" />
-              <label for="areas-tactical">Tactical</label>
-
-              <input type="checkbox" id="areas-strategy" name="areas" value="Strategy" />
-              <label for="areas-strategy"> Strategy </label>
-
-              <input type="checkbox" id="areas-leadership" name="areas" value="Leadership" />
-              <label for="areas-leadership">Leadership </label>
-            </div>
-            <div>
-              <button id="back3" class="nosubmit">BACK</button>
-
-              <button data-add id="submit">SUBMIT</button>
-            </div>
-          </div>
-        </section>
-      </form>
-    </div>
-    <section id="submit-page" class="hidden">
-      <div class="submit-body">
-        <h1>CONGRATULATIONS!</h1>
-        <div class="line"></div>
-        <h2>You have joined the e-zone athletes!</h2>
-        <h3>Now you have access to:</h3>
-        <div class="gain">
-          <div class="skill">
-            <img src="./images/icons/icon-speed.png" />
-            <p>Tailored content</p>
-          </div>
-          <div class="skill">
-            <img src="./images/icons/icon-user.png" />
-            <p>Personalised experience</p>
-          </div>
-          <div class="skill">
-            <img src="./images/icons/icon-globe.png" />
-            <p>Connecting worldwide</p>
-          </div>
-        </div>
-      </div>
-      <div id="last-buttons">
-        <button id="homepage">BACK TO HOMEPAGE</button>
-        <button id="profile">GO TO YOUR PROFILE</button>
-      </div>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <link rel="stylesheet" href="./sass/base/_layout-home.scss">
+    <link rel="stylesheet" href="./sass/components/_home-marketing-section.scss">
+</head>
+<body id="home-body">
+    <section id="top-image">
+        <img src="./images/ezone-desktop-top.png" alt="">
     </section>
+    <section id="middle-marketing">
+        <div id="header-marketing">
+            <h1>JOIN E-ZONE</h1>
+            <div class="line-break"></div>
+        </div>
+        <div id="info-wrapper">
+            <div id="icon-circle1">
+                <img id="icon1" src="./images/icons/icon-speed.png" alt="">
+            </div>
+            <h3 id="title1" class="icon-titles">Improve your performance</h3>
 
-    <script type="module" src="/main.js"></script>
-  </body>
+            <div id="icon-circle2">
+                <img id="icon2" src="./images/icons/icon-gamepad.png" alt="">
+            </div>
+            <h3 id="title2" class="icon-titles">Insider tips</h3>
+            <div id="middle-circle">
+                <h2 class="home-h2">0<span style="font-size: 2rem;">$</span></h2>
+                <p>No hidden fees</p>
+            </div>
+
+            <div id="icon-circle3">
+                <img id="icon3" src="./images/icons/icon-user.png" alt="">
+            </div>
+            <h3 id="title3" class="icon-titles">Personalised content</h3>
+
+            <div id="icon-circle4">
+                <img id="icon4" src="./images/icons/icon-globe.png" alt="">
+            </div>
+            <h3 id="title4" class="icon-titles">Connect Worldwide</h3>
+            <div id="line-behind"></div>
+        </div>
+        <div id="bottom-gradient">
+            
+        </div>
+        <div id="marketing-container"></div>
+        <div id="home-gradient"></div>
+        <a href="./form.html"><button id="but-go-to-form">JOIN THE COMMUNITY</button></a>
+        
+    </section>
+    <section id="header-articles">
+        <h1>ARTICLES</h1>
+        <div class="line-break"></div>
+    </section>
+    <section id="middle-image">
+        <img src="./images/ezone-desktop-middle.webp" alt="">
+    </section>
+    <section id="bottom-image">
+        <img src="./images/ezone-desktop-bottom.png" alt="">
+    </section>
+    
+</body>
 </html>

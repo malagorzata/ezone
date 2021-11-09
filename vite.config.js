@@ -6,7 +6,7 @@ module.exports = {
         rollupOptions: {
             input: {
                 main: resolve(__dirname, "index.html"),
-                sub: resolve(__dirname, "home.html"),
+                sub: resolve(__dirname, "form.html"),
             },
         },
     },
