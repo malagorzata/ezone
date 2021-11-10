@@ -23,13 +23,13 @@ form {
 #step-row {
   width: 100%;
   height: 40px;
-  margin: 0 auto;
+  margin: 0;
   display: flex;
   align-items: center;
   position: relative;
   // background-color: root.$grey-color3;
   border-bottom: solid 2px root.$blue-color2;
-
+  padding: 0;
   border-radius: 20px 20px 0 0;
 }
 
@@ -40,13 +40,14 @@ form {
   position: relative;
   height: 100%;
   padding-top: 0.4rem;
+  margin-top: 0;
 }
 .step-col:nth-child(1) {
-  border-radius: 20px 0 0 0;
+  border-radius: 18px 0 0 0;
   // background-color: root.$blue-color2;
 }
 .step-col:nth-child(3) {
-  border-radius: 0 20px 0 0;
+  border-radius: 0 25px 0 0;
   // background-color: root.$blue-color2;
 }
 
