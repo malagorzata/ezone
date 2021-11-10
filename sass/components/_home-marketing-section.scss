@@ -40,7 +40,7 @@
     top: 0px;
 
     background-color: blue;
-    height: 500px;
+    height: 470px;
     z-index: 1;
     width: 100vw;
     border: #3e14d6 5px solid;
@@ -102,10 +102,10 @@
     justify-content: center;
     display: grid;
     grid-template-columns: 5.5vw 2vw 7vw 2.5vw 10vw 2.5vw 7vw 2vw 5.5vw;
-    grid-template-rows: 8vw 1vw 3vw;
+    grid-template-rows: 100px 30px 70px;
     column-gap: 0;
     row-gap: 0;
-    margin-top: 140px;
+    margin-top: 150px;
     // margin-top: 8rem;
 }
 
@@ -194,7 +194,7 @@
     background: transparent linear-gradient(180deg, #3e14d6 0%, #23068b 100%) 0%
         0% no-repeat padding-box;
     border-radius: 0px 0px 50px 50px;
-    margin-top: 67px;
+    margin-top: 60px;
 
     z-index: 5;
 }
