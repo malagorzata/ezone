@@ -2,7 +2,7 @@
 @use "../base/typography";
 
 #home-body {
-    font-size: 100%;
+    font-size: 16px;
 }
 
 #middle-marketing {
@@ -81,7 +81,7 @@
 }
 
 .line-break {
-    border-bottom: root.$orange-color1 3px solid;
+    border-bottom: root.$green-color 3px solid;
     width: 100px;
     margin-top: 1rem;
     margin-left: auto;
@@ -101,9 +101,19 @@
     left: calc((100% - 185px) / 2);
     top: 25%;
     width: 185px;
+    border: 0px;
+
     z-index: 10;
 
     cursor: pointer;
+}
+
+#button-go-to-form:hover {
+    color: white;
+    // background-color: #16152b;
+    background-color: #d7643d;
+    border: 0px;
+    transition: ease-in-out 0.2s;
 }
 
 // MORE INFO WRAPPER - icons etc
@@ -218,7 +228,7 @@ h3.icon-titles {
     z-index: 3;
 
     font-family: typography.$font-regular;
-    font-size: 1rem;
+    font-size: 1em;
     text-align: center;
     color: white;
 }
@@ -243,7 +253,7 @@ h3.icon-titles {
     position: relative;
     top: 18%;
     font-family: typography.$font-regular;
-    font-size: 2.5rem;
+    font-size: 2.5em;
     text-align: center;
     color: white;
 
@@ -254,7 +264,7 @@ h3.icon-titles {
     position: relative;
     top: 20%;
     font-family: typography.$font-medium;
-    font-size: 1rem;
+    font-size: 1em;
     text-align: center;
     color: white;
 
@@ -265,19 +275,19 @@ h3.icon-titles {
 
 #icon1 {
     position: relative;
-    top: 20%;
+    top: 18%;
     left: 17%;
     width: 3.5vw;
-    height: 3vw;
+    height: auto;
     z-index: 4;
 }
 
 #icon2 {
     position: relative;
-    top: 30%;
+    top: 34%;
     left: 15%;
     width: 4.9vw;
-    height: 2.8vw;
+    height: auto;
     z-index: 4;
 }
 
@@ -286,15 +296,33 @@ h3.icon-titles {
     top: 17%;
     left: 17%;
     width: 4.7vw;
-    height: 4.7vw;
+    height: auto;
     z-index: 4;
 }
 
 #icon4 {
     position: relative;
-    top: 20%;
+    top: 18%;
     left: 18%;
     width: 3.5vw;
-    height: 3.3vw;
+    height: auto;
     z-index: 4;
+}
+
+@media screen and (max-width: 1500px) {
+    #home-body {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    #home-body {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    #home-body {
+        font-size: 10px;
+    }
 }
