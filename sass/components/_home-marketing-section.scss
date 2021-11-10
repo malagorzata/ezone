@@ -90,8 +90,20 @@
     z-index: 5;
 }
 
-#but-go-to-form {
+#button-go-to-form {
+    position: absolute;
+    font-family: Uniform-Medium;
+    background-color: white;
+    color: rgb(22, 21, 43);
+    border-radius: 1500px;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    left: calc((100% - 185px) / 2);
+    top: 25%;
+    width: 185px;
     z-index: 10;
+
+    cursor: pointer;
 }
 
 // MORE INFO WRAPPER - icons etc
@@ -194,7 +206,7 @@
     background: transparent linear-gradient(180deg, #3e14d6 0%, #23068b 100%) 0%
         0% no-repeat padding-box;
     border-radius: 0px 0px 50px 50px;
-    margin-top: 60px;
+    margin-top: 40px;
 
     z-index: 5;
 }
