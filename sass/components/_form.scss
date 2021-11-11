@@ -2,255 +2,255 @@
 @use "../base/typography";
 
 #container {
-    background-color: white;
-    border-radius: 30px;
-    border: 0.8rem solid root.$grey-color;
-    width: 48rem;
-    height: 35rem;
-    margin: 100px auto;
-    box-shadow: 0px 0px 2px 9px rgba(62, 20, 214, 1);
-    position: relative;
+  background-color: white;
+  border-radius: 30px;
+  border: 0.8rem solid root.$grey-color;
+  width: 48rem;
+  height: 35rem;
+  margin: 100px auto;
+  box-shadow: 0px 0px 2px 9px rgba(62, 20, 214, 1);
+  position: relative;
 }
 
 form {
-    border-radius: 20px;
+  border-radius: 20px;
 }
 
 .hidden {
-    display: none !important ;
+  display: none !important ;
 }
 
 #step-row {
-    width: 100%;
-    height: 40px;
-    margin: 0;
-    display: flex;
-    align-items: center;
-    position: relative;
-    // background-color: root.$grey-color3;
-    border-bottom: solid 2px root.$blue-color2;
-    padding: 0;
-    border-radius: 20px 20px 0 0;
+  width: 100%;
+  height: 40px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  position: relative;
+  // background-color: root.$grey-color3;
+  border-bottom: solid 2px root.$blue-color2;
+  padding: 0;
+  border-radius: 20px 20px 0 0;
 }
 
 .step-col {
-    width: 100%;
-    text-align: center;
-    color: root.$grey-color;
-    position: relative;
-    height: 100%;
-    padding-top: 0.4rem;
-    margin-top: 0;
+  width: 100%;
+  text-align: center;
+  color: root.$grey-color;
+  position: relative;
+  height: 100%;
+  padding-top: 0.4rem;
+  margin-top: 0;
 }
 .step-col:nth-child(1) {
-    border-radius: 18px 0 0 0;
-    // background-color: root.$blue-color2;
+  border-radius: 18px 0 0 0;
+  // background-color: root.$blue-color2;
 }
 .step-col:nth-child(3) {
-    border-radius: 0 25px 0 0;
-    // background-color: root.$blue-color2;
+  border-radius: 0 17px 0 0;
+  // background-color: root.$blue-color2;
 }
 
 #progress {
-    position: absolute;
-    height: 100%;
-    width: 33%;
-    background: root.$blue-color2;
-    border-radius: 20px 0 0 0;
-    // border-bottom: solid 2px root.$blue-color;
+  position: absolute;
+  height: 100%;
+  width: 33%;
+  background: root.$blue-color2;
+  border-radius: 20px 0 0 0;
+  // border-bottom: solid 2px root.$blue-color;
 }
 
 #level1,
 #level2,
 #level3 {
-    margin: 3rem;
-    position: absolute;
-    transition: 0.5s;
-    div.checkboxes {
-        display: flex;
-        flex-direction: row;
-        width: 42rem;
-        flex-wrap: wrap;
-    }
+  margin: 3rem;
+  position: absolute;
+  transition: 0.5s;
+  div.checkboxes {
+    display: flex;
+    flex-direction: row;
+    width: 42rem;
+    flex-wrap: wrap;
+  }
 
+  label {
+    font-size: 1rem;
+    border: solid 1px rgb(145, 145, 145);
+    border-radius: 0.7rem;
+    padding: 0.3rem 0.6rem;
+    margin: 0.8rem 1rem 0 0;
+  }
+  label:hover {
+    cursor: pointer;
+  }
+
+  label[for="types"],
+  label[for="games"],
+  label[for="areas"] {
+    font-family: typography.$font-bold;
+  }
+
+  span {
+    font-size: 1.2rem;
+    display: block;
+    margin: 0.3rem 0;
+    margin-bottom: 0.7rem;
+  }
+
+  label:nth-child(1) {
+    font-size: 1.5rem;
+    border: none;
+    margin: 0.1rem 0;
+    padding: 0;
+  }
+  input[type="checkbox"] {
+    color: rebeccapurple;
+    display: none;
+  }
+
+  .checkboxes {
     label {
-        font-size: 1rem;
-        border: solid 1px rgb(145, 145, 145);
-        border-radius: 0.7rem;
-        padding: 0.3rem 0.6rem;
-        margin: 0.8rem 1rem 0 0;
+      font-family: typography.$font-medium;
     }
-    label:hover {
-        cursor: pointer;
-    }
-
-    label[for="types"],
-    label[for="games"],
-    label[for="areas"] {
-        font-family: typography.$font-bold;
-    }
-
-    span {
-        font-size: 1.2rem;
-        display: block;
-        margin: 0.3rem 0;
-        margin-bottom: 0.7rem;
-    }
-
-    label:nth-child(1) {
-        font-size: 1.5rem;
-        border: none;
-        margin: 0.1rem 0;
-        padding: 0;
-    }
-    input[type="checkbox"] {
-        color: rebeccapurple;
-        display: none;
-    }
-
-    .checkboxes {
-        label {
-            font-family: typography.$font-medium;
-        }
-    }
-    input[type="checkbox"]:checked + label,
-    input[type="checkbox"]:hover + label {
-        background-color: root.$green-color2;
-        border: 1px solid root.$green-color;
-        box-shadow: 0px 0px 1px 1px root.$green-color2;
-    }
+  }
+  input[type="checkbox"]:checked + label,
+  input[type="checkbox"]:hover + label {
+    background-color: root.$green-color2;
+    border: 1px solid root.$green-color;
+    box-shadow: 0px 0px 1px 1px root.$green-color2;
+  }
 }
 
 /// LEVEL 0 ---> first page
 #level0 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 2rem;
-    position: relative;
-    top: 0;
-    height: 33.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2rem;
+  position: relative;
+  top: 0;
+  height: 33.5rem;
 }
 
 #img {
-    background-image: url(../../img/level0-background.png);
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
-    border: none;
-    border-radius: 18px 0 0 18px;
-    background-size: 120%;
-    margin: -0.08rem;
-    margin-left: -0.15rem;
+  background-image: url(../../img/level0-background.png);
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 18px 0 0 18px;
+  background-size: 120%;
+  margin: -0.08rem;
+  margin-left: -0.15rem;
 }
 
 #step-row {
-    display: none;
+  display: none;
 }
 
 #level0 h2 {
-    font-family: typography.$font-bold;
-    font-size: 1.4rem;
-    margin: 1.3rem 0;
-    font-weight: 200;
-    line-height: 2rem;
+  font-family: typography.$font-bold;
+  font-size: 1.4rem;
+  margin: 1.3rem 0;
+  font-weight: 200;
+  line-height: 2rem;
 }
 
 #wrapper {
-    margin: 0.2rem;
-    width: 20rem;
+  margin: 0.2rem;
+  width: 20rem;
 }
 .wrapper {
-    width: 19rem;
+  width: 19rem;
 }
 .grouping {
-    display: flex;
-    flex-direction: column;
-    margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0;
 }
 
 .create-account {
-    p {
-        font-family: typography.$font-regular;
-        font-size: 0.9rem;
-        margin: 0.5rem 0;
-    }
+  p {
+    font-family: typography.$font-regular;
+    font-size: 0.9rem;
+    margin: 0.5rem 0;
+  }
 }
 
 // submit screen
 
 #submit-page {
-    background-image: url(../../public/images/final-screen-background.png);
-    border-radius: 30px;
-    border: 0.8rem solid root.$grey-color;
-    width: 48rem;
-    height: 35rem;
-    margin: 100px auto;
-    box-shadow: 0px 0px 2px 9px rgba(62, 20, 214, 1);
-    position: relative;
+  background-image: url(../../public/images/final-screen-background.png);
+  border-radius: 30px;
+  border: 0.8rem solid root.$grey-color;
+  width: 48rem;
+  height: 35rem;
+  margin: 100px auto;
+  box-shadow: 0px 0px 2px 9px rgba(62, 20, 214, 1);
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem;
+  h1 {
+    font-family: typography.$font-bold;
+    color: root.$orange-color1;
+    font-size: 2.2rem;
+    text-align: center;
+  }
+  h2 {
+    font-family: typography.$font-regular;
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 1rem;
+    color: white;
+  }
+  h3 {
+    font-family: typography.$font-regular;
+    color: white;
+    font-size: 1.4rem;
+    text-align: center;
+    margin: 0.5rem;
+  }
+  .line {
+    height: 2px;
+    border: 1px solid root.$orange-color1;
+    width: 10rem;
+    margin: 0.5rem;
+  }
+
+  .skill {
+    display: flex;
+    flex-direction: row;
+    margin: 1rem 0;
+    p {
+      font-family: typography.$font-medium;
+      color: white;
+      font-size: 1.3rem;
+      padding: 0.5rem 0.6rem;
+    }
+    .skill-icon {
+      width: 3.5rem;
+      height: 3.5rem;
+    }
+    img {
+      height: 3rem;
+      width: auto;
+      background-color: root.$orange-color;
+      padding: 0.4rem;
+      border-radius: 5rem;
+    }
+  }
+
+  .submit-body {
     display: flex;
     align-items: center;
     flex-direction: column;
-    justify-content: space-between;
-    padding: 2rem;
-    h1 {
-        font-family: typography.$font-bold;
-        color: root.$orange-color1;
-        font-size: 2.2rem;
-        text-align: center;
-    }
-    h2 {
-        font-family: typography.$font-regular;
-        color: white;
-        font-size: 1.5rem;
-        text-align: center;
-        margin: 1rem;
-        color: white;
-    }
-    h3 {
-        font-family: typography.$font-regular;
-        color: white;
-        font-size: 1.4rem;
-        text-align: center;
-        margin: 0.5rem;
-    }
-    .line {
-        height: 2px;
-        border: 1px solid root.$orange-color1;
-        width: 10rem;
-        margin: 0.5rem;
-    }
+  }
 
-    .skill {
-        display: flex;
-        flex-direction: row;
-        margin: 1rem 0;
-        p {
-            font-family: typography.$font-medium;
-            color: white;
-            font-size: 1.3rem;
-            padding: 0.5rem 0.6rem;
-        }
-        .skill-icon {
-            width: 3.5rem;
-            height: 3.5rem;
-        }
-        img {
-            height: 3rem;
-            width: auto;
-            background-color: root.$orange-color;
-            padding: 0.4rem;
-            border-radius: 5rem;
-        }
-    }
-
-    .submit-body {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-    }
-
-    .gain {
-        margin: 0;
-        padding: 0;
-    }
+  .gain {
+    margin: 0;
+    padding: 0;
+  }
 }
